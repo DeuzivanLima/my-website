@@ -36,16 +36,14 @@ body {
 
 
 .title_hightlight {
-    background: var(--gradient);
+    background: #0084ff;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .header_about {
-  background: radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.3), transparent 50%),
-              radial-gradient(circle at 80% 20%, rgba(255, 119, 198, 0.3), transparent 50%);
-
+  background-color: #080808;
 }
 
 .section_label_decoration {

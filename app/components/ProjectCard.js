@@ -35,9 +35,9 @@ export const ProjectCard = ({
   }, [src_lists]);
 
   return (
-    <div className="border overflow-hidden border-neutral-800 hover:border-blue-500 rounded-4xl transition duration-400 bg-neutral-900">
+    <div className="border overflow-hidden border-neutral-800 hover:border-blue-500 rounded-sm transition duration-400 bg-neutral-900">
       <div>
-        <div className="relative w-full h-[60vw] max-h-[256px] overflow-hidden">
+        <div className="relative w-full h-[60vw] max-h-[356px] overflow-hidden">
           {src_lists.map((src, index) => (
             <Image
               key={src}
@@ -58,7 +58,7 @@ export const ProjectCard = ({
           ))}
         </div>
 
-        <div className="flex p-6 flex-col h-[19rem]">
+        <div className="flex p-6 flex-col h-[21rem]">
           <h1 className="text-2xl font-bold mt-4">{title}</h1>
           <p className="text-neutral-500">{description}</p>
           <div className="flex gap-2 mt-4">
@@ -75,7 +75,7 @@ export const ProjectCard = ({
           <div className='mt-auto'>
             <Link
               href={href}
-              className="flex justify-center gap-2 mt-4 p-4 text-sm items-center bg-blue-500 rounded-3xl"
+              className="flex justify-center gap-2 mt-4 p-3 text-sm items-center bg-blue-500 rounded-sm"
             >
               <ArrowUpRight />
               <span>VIEW PROJECT</span>

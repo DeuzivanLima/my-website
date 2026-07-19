@@ -25,7 +25,7 @@ export const NavigationBar = () => {
 
   return (
     <nav className="p-6 bg-neutral-900 flex justify-between items-center relative">
-      <div className="text-white font-bold title_hightlight">DEUZIVAN.COM</div>
+      <div className="text-white font-bold">PORTFOLIO</div>
       
       <ul className="hidden md:flex gap-4">
         {options.map((option, index) => (
@@ -75,14 +75,14 @@ export const NavigationBar = () => {
             <X size={24} />
           </button>
           
-          <ul className="flex flex-col mt-16 space-y-4">
+          <ul className="flex flex-col mt-16 space-y-1">
             {options.map((option, index) => (
               <li 
                 key={index} 
               >
                 <Link
                   href={option.href}
-                  className="text-white transition-colors flex items-center p-4 gap-4 hover:bg-neutral-600"
+                  className="text-white transition-colors flex items-center p-4 gap-4 hover:bg-neutral-600 bg-neutral-800"
                   onClick={toggleMobileMenu}
                   >
                   {option.icon}
